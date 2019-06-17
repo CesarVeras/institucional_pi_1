@@ -6,7 +6,7 @@ document.body.onload = () => {
             iframe.width = '600px';
             iframe.height = '400px';
         } else {
-            iframe.width = '400px';
+            iframe.width = '300px';
             iframe.height = '200px';
         }
     }
