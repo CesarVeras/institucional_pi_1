@@ -165,3 +165,20 @@ footer {
         margin: auto;
     }
 }
+.btn{
+    border: none;
+    padding: 10px 0px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #c3c3c3;
+}
+.btn-primary{
+    background-color: #8bbcf9;
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #4685d4;
+}
