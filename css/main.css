@@ -84,6 +84,11 @@ section article {
     border-bottom: 1px solid #ccc;
 }
 
+
+section article:last-child {
+    border: 0;
+}
+
 section article h3 {
     margin-bottom: 0.5em;
 }
@@ -145,6 +150,12 @@ section .new {
 }
 /* fim section */
 
+.us-links a {
+    color: var(--cor-3);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* rodape */
 footer {
     padding: 1em;
@@ -185,6 +196,8 @@ footer {
         margin: auto;
     }
 }
+
+/* botoes */
 .btn{
     border: none;
     padding: 10px 0px;
@@ -202,3 +215,4 @@ footer {
 .btn-primary:hover{
     background-color: #4685d4;
 }
+/* fim botoes */
