@@ -19,6 +19,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(208, 206, 226));
 }
 
 p {
@@ -99,14 +100,14 @@ section article h3 {
 
 section article iframe {
     display: block;
-    margin: 1em auto 0.5em auto;
+    width: 90%;
 }
 
 section form {
     padding: 1em;
     background-color: var(--cor-3);
     width: 90%;
-    margin: 1em auto;
+    margin: 15px 0px;
     display: grid;
     grid-gap: 0.3em;
     grid-template-columns: repeat(2, 1fr);
@@ -213,15 +214,29 @@ footer {
     background-color: #c3c3c3;
 }
 .btn-primary{
-    background-color: #8bbcf9;
+    background-color: #78bfbc;
     color: #fff;
 }
 .btn-primary:hover{
-    background-color: #4685d4;
+    background-color: #3d9c97;
 }
 /* fim botoes */
 
 #videoBG {
     position:fixed;
     z-index: -2;
+}
+
+form{
+  border-radius: 7px;
+  padding: 25px;
+}
+form input{
+  padding: 5px;
+  border: 0;
+  border-radius: 4px;
+}
+form label {
+  padding: 3px 0px;
+  font-family: sans-serif;
 }
