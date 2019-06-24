@@ -16,7 +16,6 @@
 body {
     color: var(--cor-5);
     width:100vw;
-    height: 100vh;
     margin: 0;
     overflow-x: hidden;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(208, 206, 226));
@@ -101,13 +100,14 @@ section article h3 {
 section article iframe {
     display: block;
     width: 90%;
+    margin: auto;
 }
 
 section form {
     padding: 1em;
     background-color: var(--cor-3);
     width: 90%;
-    margin: 15px 0px;
+    margin: 15px auto;
     display: grid;
     grid-gap: 0.3em;
     grid-template-columns: repeat(2, 1fr);
@@ -215,7 +215,6 @@ footer {
 }
 .btn-primary{
     background-color: #78bfbc;
-    color: #fff;
 }
 .btn-primary:hover{
     background-color: #3d9c97;
