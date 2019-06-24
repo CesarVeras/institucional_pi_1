@@ -1,9 +1,9 @@
 :root {
-    --cor-1: #E5FCC2;
+    --cor-1: #cecece;
     --cor-2: #9DE0AD;
     --cor-3: #45ADA8;
     --cor-4: #547980;
-    --cor-5: #594F4F;
+    --cor-5: #1b212d;
 }
 
 * {
@@ -15,6 +15,10 @@
 
 body {
     color: var(--cor-5);
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 p {
@@ -122,12 +126,12 @@ section form button {
 
 .banner {
     margin: auto;
+    margin-top: 1em;
     margin-bottom: 1em;
     padding: 4em 1em;
     color: white;
     position: relative;
-    background-image: url('../img/fundo.jpg');
-    z-index: -2;    
+    z-index: -2;
 }
 
 .banner::before {
@@ -139,7 +143,7 @@ section form button {
     left: 0;
     opacity: 0.9;
     z-index: -1;
-    background-color: var(--cor-4);
+    background-color: #08364257;
 }
 
 section .new {
@@ -179,7 +183,7 @@ footer {
     header nav a{
         margin-right: 2em;
     }
-    
+
     .banner {
         padding: 5em;
         width: 80%;
@@ -216,3 +220,8 @@ footer {
     background-color: #4685d4;
 }
 /* fim botoes */
+
+#videoBG {
+    position:fixed;
+    z-index: -2;
+}
