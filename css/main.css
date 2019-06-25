@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');@import url('https://fonts.googleapis.com/css?family=Faster+One&display=swap');
+
 :root {
     --cor-1: #cecece;
     --cor-2: #9DE0AD;
@@ -29,11 +31,15 @@ p {
 header {
     background-color: var(--cor-5);
     color: var(--cor-3);
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 header h1 {
+    font-size: 1.9em;
     padding: 0.7em 0;
     text-align: center;
+    font-family: 'Krona One', sans-serif;
 }
 
 /* nav */
@@ -55,7 +61,7 @@ header nav a {
 }
 
 header nav a.selected {
-    border-color: var(--cor-2);
+    border-color: var(--cor-3);
     position: relative;
 }
 
@@ -63,7 +69,7 @@ header nav a.selected::after {
     content: '';
     width: 20px;
     height: 20px;
-    background-color: var(--cor-2);
+    background-color: var(--cor-3);
     position: absolute;
     top: 70%;
     left: 50%;
@@ -73,7 +79,7 @@ header nav a.selected::after {
 
 header nav a:hover {
     transition: border 0.4s;
-    color: var(--cor-2);
+    color: var(--cor-3);
 }
 /* fim nav */
 /* fim header */
@@ -91,6 +97,25 @@ section article {
 
 section article:last-child {
     border: 0;
+}
+
+section article p.doc-links {
+    margin: 20px 0;
+}
+
+section article p.doc-links a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5em;
+    color: var(--cor-5);
+    border: 2px solid var(--cor-5);
+    border-radius: 5px;
+}
+
+section article p.doc-links a:hover {
+    transition: all 0.3s;
+    color: white;
+    background-color: var(--cor-5);
 }
 
 section article h3 {
@@ -168,6 +193,11 @@ footer {
     color: #a09f9f;
     background-color: var(--cor-5);
 }
+
+footer a {
+    color: unset;
+    text-decoration: none;
+}
 /* fim rodape */
 
 .row{
@@ -184,6 +214,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
     header h1 {
         margin: 0 2em;
         text-align: left;
@@ -191,6 +226,7 @@ footer {
     }
 
     header nav {
+        justify-self: center;
         display: inline-block;
     }
 
