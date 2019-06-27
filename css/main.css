@@ -99,11 +99,15 @@ section article:last-child {
     border: 0;
 }
 
-section article p.doc-links {
+section article .doc-links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
     margin: 20px 0;
 }
 
-section article p.doc-links a {
+section article .doc-links a {
     font-weight: bold;
     text-decoration: none;
     padding: 0.5em;
@@ -252,6 +256,10 @@ footer a {
 
     .row{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section article .doc-links {
+        display: block;
     }
 }
 
